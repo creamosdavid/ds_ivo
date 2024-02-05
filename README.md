@@ -1,11 +1,8 @@
-<!-- <p align="center"><a href="https://iyata.net" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p> -->
-
-<p align="center"><a href="https://iyata.net" target="_blank">IVO Digital Signage</a></p>
+<p align="center"><a href="https://ivo.com.co" target="_blank">IVO Digital Signage</a></p>
 
 ## Acerca de IVO
 
-IVO ds es un paso a paso que permite instalar de forma rápida y segura las librerías de Chromiun en 
-una Raspberry para que se ejecute el sistema en una pantalla de inicio a modo de kioso, como una carlera digita.
+IVO (digital signage) es un paso a paso que permite configurar una raspberry para que funcione como cartelera digital con chromiun web browser, las librerías descargadas habilitan el raspberry para mostrar un navegador web en pantalla completa.
 
 El archivo de instalación debe ejecutarse con sudo en raspbian.
 
@@ -16,7 +13,7 @@ El archivo de instalación debe ejecutarse con sudo en raspbian.
 
 ## Instalación
 
-Con el comando wget dentro de la carpeta raíz del rpi descargar el archivo de instalación anes de ejecutar:
+Con el comando wget dentro de la carpeta raíz del rpi descargar el archivo de instalación antes de ejecutar:
 
 wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/install.sh
 chmod +x install.sh
