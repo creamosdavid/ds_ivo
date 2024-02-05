@@ -38,7 +38,7 @@ Aceptar, finalizar y reiniciar sistema para que tome los cambios
 
 Luego descargas el archivo con el comando wget dentro de la carpeta raíz del rpi y sigues los pasos de instalación:
 
-`wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/install.sh`  
+`wget https://raw.githubusercontent.com/davidivab/ds_ivo/main/install.sh`  
 `chmod +x install.sh`  
 `sudo ./install.sh`  
 
