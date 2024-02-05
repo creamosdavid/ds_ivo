@@ -13,16 +13,6 @@ El archivo de instalación debe ejecutarse con sudo en raspbian.
 
 ## Instalación
 
-Con el comando wget dentro de la carpeta raíz del rpi descargar el archivo de instalación antes de ejecutar:
-
-`wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/install.sh`  
-`chmod +x install.sh`  
-`sudo ./install.sh`  
-  
-El sistema se reiniciará y en la siguiente carga abrirá el navegador en modo kioso con la URL suministrada.
-
-## Configuración
-
 El primer paso consiste en habilitar inicio de sesión automático, para lograrlo debes ingresar a la configuración del sistema y habilitar console autologin.  
 
 `sudo raspi-config`  
@@ -31,10 +21,19 @@ Boot Autologin
 Console Autologin  
 Aceptar, finalizar y reiniciar sistema para que tome los cambios  
 
+Luego descargas el archivo con el comando wget dentro de la carpeta raíz del rpi y sigues los pasos de instalación:
+
+`wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/install.sh`  
+`chmod +x install.sh`  
+`sudo ./install.sh`  
+
+El sistema se reiniciará y en la siguiente carga abrirá el navegador en modo kioso con la URL suministrada.
+
+## Configuración
 
 La URL por defecto se encuentra almacenada en el archivo install.sh sin embargo se puede modificar añadiendo la variable antes de ejecutar el script de bash, de la siguiente forma:  
 
-`sudo url=https://google.com ./install.sh`  
+`sudo url=https://github.com ./install.sh`  
 
 De esta forma enviar la variable "$url" al archivo y actualizamos la que se encuentra preconfigurada.
 
@@ -46,7 +45,7 @@ Instalar Raspberry OS en una micro SD que posteriormente vincularas a tu raspber
 
 - **[Raspberry OS, oficial](https://www.raspberrypi.com/software/)**  
 
-En la configuración inicial debe tener en cuenta:  
+En la configuración inicial debes tener en cuenta:  
 1. Configurar una red WiFi para que el RPI pueda conectarse sin necesidad de cable.  
 2. Permitir conexiones tipo SSH, de está forma podrás acceder remotamente a tu RPI.  
 3. Buscar la dirección IP local del dispositivo, desde un terminal remoto puede usar el comando "arp -a" en terminal para listar todos los equipos en tu red o en el mismo RPI ejecutar el comando "ifconfig".  
