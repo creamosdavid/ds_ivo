@@ -23,6 +23,15 @@ El sistema se reiniciará y en la siguiente carga abrirá el navegador en modo k
 
 ## Configuración
 
+El primer paso consiste en habilitar inicio de sesión automático, para lograrlo debes ingresar a la configuración del sistema y habilitar console autologin.  
+
+`sudo raspi-config`  
+System options  
+Boot Autologin  
+Console Autologin  
+Aceptar, finalizar y reiniciar sistema para que tome los cambios  
+
+
 La URL por defecto se encuentra almacenada en el archivo install.sh sin embargo se puede modificar añadiendo la variable antes de ejecutar el script de bash, de la siguiente forma:  
 
 `sudo url=https://google.com ./install.sh`  
@@ -40,7 +49,7 @@ Instalar Raspberry OS en una micro SD que posteriormente vincularas a tu raspber
 En la configuración inicial debe tener en cuenta:  
 1. Configurar una red WiFi para que el RPI pueda conectarse sin necesidad de cable.  
 2. Permitir conexiones tipo SSH, de está forma podrás acceder remotamente a tu RPI.  
-3. Buscar la dirección IP local del dispositivo, desde un terminal remotro puede usar el comando "arp -a" en terminal para listar todos los equipos en tu red o en el mismo RPI ejecutar el comando "ifconfig".  
+3. Buscar la dirección IP local del dispositivo, desde un terminal remoto puede usar el comando "arp -a" en terminal para listar todos los equipos en tu red o en el mismo RPI ejecutar el comando "ifconfig".  
 4. Conectarse mediante SSH desde terminal "ssh pi@190.160.0.20", *pi* es el nombre de usuario que se configura por defecto en la creación del volumen desde la imagen, y la IP es la que hayas encontrado con el paso anterior.  
 5. Ya estás listo para ejecutar el paso a paso objeto de éste artículo. :bowtie:  
 
