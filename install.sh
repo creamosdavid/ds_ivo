@@ -14,7 +14,7 @@ sudo apt-get install --no-install-recommends chromium-browser
 if [[ -n "$url" ]]; then
     url_kiosko=$url
 else
-    url_kiosko='https://control.ivo.com.co/totem/test/NIDEO'
+    url_kiosko='https://control.ivo.com.co/totem/NIDEO'
 fi
 
 echo > /etc/xdg/openbox/autostart
@@ -33,7 +33,7 @@ sed -i 's/"exited_cleanly":false/"exited_cleanly":true/; s/"exit_type":"[^"]\+"/
 chromium-browser --disable-infobars --kiosk '$url_kiosko'
 EOF
 
-wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/.bash_profile
+wget https://raw.githubusercontent.com/davidivab/ds_ivo/main/.bash_profile
 source ~/.bash_profile
 
 echo "Finalizando configuración y reiniciando sistema..."
