@@ -30,7 +30,7 @@ sed -i 's/"exited_cleanly":false/"exited_cleanly":true/; s/"exit_type":"[^"]\+"/
 chromium-browser --disable-infobars --kiosk '$url'
 EOF
 
-wget https://github.com/creamosdavid/ds_ivo/blob/main/.bash_profile
+wget https://raw.githubusercontent.com/creamosdavid/ds_ivo/main/.bash_profile
 source ~/.bash_profile
 
 echo "Finalizando configuración y reiniciando sistema..." 
